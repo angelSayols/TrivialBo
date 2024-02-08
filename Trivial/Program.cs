@@ -20,6 +20,7 @@ namespace Trivial
         
             do
             {
+                Console.Clear();
                 ShowOptions();
                 tecla = Console.ReadKey();
                 Console.Clear();
@@ -27,21 +28,27 @@ namespace Trivial
                 {
                     case ConsoleKey.D1:
                         //historia
+                        tractamentTematica(h);
                         break;
                     case ConsoleKey.D2:
                         //sport 2
+                        tractamentTematica(h);
                         break;
                     case ConsoleKey.D3:
                         //art 3
+                        tractamentTematica(h);
                         break;
                     case ConsoleKey.D4:
                         //geografia 4
+                        tractamentTematica(h);
                         break;
                     case ConsoleKey.D5:
                         //entreteniment 5
+                        tractamentTematica(h);
                         break;
                     case ConsoleKey.D6:
-                        //mates 6                    
+                        //mates 6
+                        tractamentTematica(h);
                         break;
 
                     default:
@@ -81,21 +88,21 @@ namespace Trivial
             a[0] = new questionari("Who sculpted The Thinker ?", "1) Rodin", "2) Marc ", "3) Picasso", "4) Dalí", "1");
             a[0] = new questionari("Which of this artists is Spanish ?", "1) Picasso", "2) Leonardo Da Vinci", "3) Tiziano", "4) Vladimir Putin", "1");
             a[0] = new questionari("Who painted rare clocks ?", "1) Dalí", "2) Da Vinci", "3) Vladimir Putin", "4) Pedor Sánchez", "1");
-            g[0] = { };
-            g[0] = { };
-            g[0] = { };
-            g[0] = { };
-            g[0] = { };
-            e[0] = { };
-            e[0] = { };
-            e[0] = { };
-            e[0] = { };
-            e[0] = { };
-            m[0] = { };
-            m[0] = { };
-            m[0] = { };
-            m[0] = { };
-            m[0] = { };
+            //g[0] = { };
+            //g[0] = { };
+            //g[0] = { };
+            //g[0] = { };
+            //g[0] = { };
+            //e[0] = { };
+            //e[0] = { };
+            //e[0] = { };
+            //e[0] = { };
+            //e[0] = { };
+            //m[0] = { };
+            //m[0] = { };
+            //m[0] = { };
+            //m[0] = { };
+            //m[0] = { };
         }
 
         
