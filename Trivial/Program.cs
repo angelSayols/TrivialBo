@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using System.Reflection.PortableExecutable;
 using System.Runtime.InteropServices;
 
 namespace Trivial
@@ -106,10 +107,19 @@ namespace Trivial
 
         
 
-        public static void tractamentTematica(List<string> preguntes)
+        public static void tractamentTematica(questionari[] q)
         {
             Random r = new Random();
+            int number = r.Next(q.Length);
             
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(q[number].RetornaPregunta()[i]);
+            }
+
+            string llegir = Console.ReadLine();
+            if (llegir == q[number].RetornaPregunta()[5]) Console.WriteLine("CORRECTE");
+            else Console.WriteLine("INCORRECTE");
         }
     }
 }
