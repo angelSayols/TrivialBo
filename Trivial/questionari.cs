@@ -23,6 +23,13 @@ namespace Trivial
             this.r4 = r4;
             this.correcte = correcte;
         }
+
+        public string[] RetornaPregunta()
+        {
+            string[] b = {pregunta, r1, r2, r3, r4,correcte};
+
+            return b;
+        }
     }
 
 
