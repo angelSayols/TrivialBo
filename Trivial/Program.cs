@@ -66,6 +66,8 @@ namespace Trivial
 
         public static void ShowOptions()
         {
+
+            // this shows all the options of the menu
             Console.WriteLine("TRY ONE OF THIS THEMES: ");
             Console.WriteLine("PRESS 1 FOR HISTORY");
             Console.WriteLine("PRESS 2 FOR SPORTS");
@@ -78,7 +80,8 @@ namespace Trivial
 
         private static void crearPreguntes(questionari[] h, questionari[] s, questionari[] a, questionari[] g, questionari[] e, questionari[] m)
         {
-
+            // generate all the questions and the correct answer for each topic
+            // we save them in arrays depending on the topic
   
             h[0] = new questionari("What year was born Franco?", "1) 5 August 2034","2) 4 December 1892","3) 2 November 1677"," 4) He was not born", "2");
             h[1] = new questionari("When was the Eiffel finished?", "1) 31 March 1889", "2) 4 December 1892", "3) 2 November 1677", " 4)It is fake", "1");
@@ -116,6 +119,7 @@ namespace Trivial
         
         public static void MsgNextScreen(string msg)
         {
+            // it writes the message msg and waits for a key to continue the program
             Console.WriteLine(msg);
             Console.ReadKey();
         }
@@ -124,6 +128,7 @@ namespace Trivial
 
         public static void tractamentTematica(questionari[] q)
         {
+            // shows all questions, reads your answer and shows if it is correct or not
             Random r = new Random();
             int number = r.Next(q.Length);
             
