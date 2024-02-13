@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using System.Reflection.PortableExecutable;
+using System.Numerics;
 using System.Runtime.InteropServices;
 
 namespace Trivial
@@ -32,23 +31,23 @@ namespace Trivial
                         break;
                     case ConsoleKey.D2:
                         //sport 2
-                        tractamentTematica(h);
+                        tractamentTematica(s);
                         break;
                     case ConsoleKey.D3:
                         //art 3
-                        tractamentTematica(h);
+                        tractamentTematica(a);
                         break;
                     case ConsoleKey.D4:
                         //geografia 4
-                        tractamentTematica(h);
+                        tractamentTematica(g);
                         break;
                     case ConsoleKey.D5:
                         //entreteniment 5
-                        tractamentTematica(h);
+                        tractamentTematica(e);
                         break;
                     case ConsoleKey.D6:
                         //mates 6
-                        tractamentTematica(h);
+                        tractamentTematica(m);
                         break;
 
                     default:
@@ -73,6 +72,8 @@ namespace Trivial
 
         private static void crearPreguntes(questionari[] h, questionari[] s, questionari[] a, questionari[] g, questionari[] e, questionari[] m)
         {
+
+  
             h[0] = new questionari("What year was born Franco?", "1) 5 August 2034","2) 4 December 1892","3) 2 November 1677"," 4) He was not born", "2");
             h[1] = new questionari("When was the Eiffel finished?", "1) 31 March 1889", "2) 4 December 1892", "3) 2 November 1677", " 4)It is fake", "1");
             h[2] = new questionari("What was taken the first photo?", "1) 1.826", "2) 1892", "3) 1677", "4) It was not taken", "1");
@@ -88,21 +89,22 @@ namespace Trivial
             a[0] = new questionari("Who sculpted The Thinker ?", "1) Rodin", "2) Marc ", "3) Picasso", "4) Dalí", "1");
             a[0] = new questionari("Which of this artists is Spanish ?", "1) Picasso", "2) Leonardo Da Vinci", "3) Tiziano", "4) Vladimir Putin", "1");
             a[0] = new questionari("Who painted rare clocks ?", "1) Dalí", "2) Da Vinci", "3) Vladimir Putin", "4) Pedor Sánchez", "1");
-            //g[0] = { };
-            //g[0] = { };
-            //g[0] = { };
-            //g[0] = { };
-            //g[0] = { };
-            //e[0] = { };
-            //e[0] = { };
-            //e[0] = { };
-            //e[0] = { };
-            //e[0] = { };
-            //m[0] = { };
-            //m[0] = { };
-            //m[0] = { };
-            //m[0] = { };
-            //m[0] = { };
+            g[0] = new questionari("What is the second highest mountain in the Earth?", "1)Everest", "2)K2", "3)Lhotse", "4)Makalu", "2");
+            g[0] = new questionari("What is the longest river in the world?", "1)Nilo", "2)Misisipi", "3)Congo", "4)Amazonas", "4");
+            g[0] = new questionari("What is the largest river in the world?", "1)Congo", "2)Misisipi", "3)Amazonas", "4)Nilo", "3");
+            g[0] = new questionari("What are the names of the mountains that border Spain and France?", "1)Pirineos", "2)Los Alpes", "3)Los Andes", "4)Los Urales", "1");
+            g[0] = new questionari("Which of these countries is not part of the Iberian Peninsula?", "1)Portugal", "2)France", "3)Spain", "4)Andorra", "2");
+            e[0] = new questionari("What is the name of the last actor who plays Spider-man?", "1)Tom Holland", "2)Andrew Garfield", "3)Tobey Maguire", "4)Chris Hemsworth", "1");
+            e[0] = new questionari("Oscar-winning film for best film of 2023", "1)Top Gun:Maverick", "2)Todo a la vez en todas partes", "3)Sin novedad en el frente", "4)Avatar:El sentido del agua", "2");
+            e[0] = new questionari("Which of these films has the less Oscars awards?", "1)Ben-Hur", "2)Titanic", "3)West Side History", "4)Lo que el viento se llevo", "4");
+            e[0] = new questionari("What is the name of the protagonist of Peaky  Blinders?", "1)Thomas Shelby", "2)Arthur Shelby", "3)Poly Grey", "4)Jhon Shelby", "1");
+            e[0] = new questionari("What is the highest grossing movie in history?", "1)Avengers:Infinity War", "2)Titanic", "3)Avengers:End Game", "4)Avatar", "4");
+            m[0] = new questionari("√36=?", "1)5", "2)4", "3)6", "4)7", "3");
+            m[0] = new questionari("12-6=?", "1)5", "2)4", "3)6", "4)7", "3");
+            m[0] = new questionari("12/2=?", "1)5", "2)4", "3)6", "4)7", "3");
+            m[0] = new questionari("2x3=?", "1)5", "2)4", "3)6", "4)7", "3");
+            m[0] = new questionari ("3+3=?", "1)5", "2)4","3)6","4)7","3") ;
+
         }
 
         
