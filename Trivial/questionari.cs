@@ -26,7 +26,7 @@ namespace Trivial
 
         public string[] RetornaPregunta()
         {
-            string[] b = {pregunta, r1, r2, r3, r4,correcte};
+            string[] b = {this.pregunta, this.r1, this.r2, this.r3, this.r4, this.correcte};
 
             return b;
         }
