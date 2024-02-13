@@ -79,7 +79,7 @@ namespace Trivial
             e[0] = new questionari("Which of these films has the less Oscars awards?", "1)Ben-Hur", "2)Titanic", "3)West Side History", "4)Lo que el viento se llevo", "4");
             e[0] = new questionari("What is the name of the protagonist of Peaky Blinders?", "1)Thomas Shelby", "2)Arthur Shelby", "3)Poly Grey", "4)Jhon Shelby", "1");
             e[0] = new questionari("What is the highest grossing movie in history?", "1)Avengers:Infinity War", "2)Titanic", "3)Avengers:End Game", "4)Avatar", "4");
-            m[0] = new questionari("√ 36=?", "1)5", "2)4", "3)6", "4)7", "3");
+            m[0] = new questionari("√36=?", "1)5", "2)4", "3)6", "4)7", "3");
             m[0] = new questionari("12-6=?", "1)5", "2)4", "3)6", "4)7", "3");
             m[0] = new questionari("12/2=?", "1)5", "2)4", "3)6", "4)7", "3");
             m[0] = new questionari("2x3=?", "1)5", "2)4", "3)6", "4)7", "3");
