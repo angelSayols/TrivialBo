@@ -69,7 +69,7 @@ namespace Trivial
             a[0] = { };
             a[0] = { };
             a[0] = { };
-            g[0] = new questionari("What is the second highest mountain in the world?", "1)Everest", "2)K2", "3)Lhotse", "4)Makalu", "2");
+            g[0] = new questionari("What is the second highest mountain in the Earth?", "1)Everest", "2)K2", "3)Lhotse", "4)Makalu", "2");
             g[0] = new questionari("What is the longest river in the world?", "1)Nilo", "2)Misisipi", "3)Congo", "4)Amazonas", "4");
             g[0] = new questionari("What is the largest river in the world?", "1)Congo", "2)Misisipi", "3)Amazonas", "4)Nilo", "3");
             g[0] = new questionari("What are the names of the mountains that border Spain and France?", "1)Pirineos", "2)Los Alpes", "3)Los Andes", "4)Los Urales", "1");
